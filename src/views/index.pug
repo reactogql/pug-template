@@ -1,0 +1,166 @@
+extends layout
+
+block content
+  section#showcase.py-4
+    .primary-overlay.text-white
+      .container
+        .row
+          .col-lg-6.text-center
+            h1.display-2.mt-5.pt-5  Consultation you dream of
+            p.lead Lead experts are here to provide you top quality consultation!
+            a.btn.btn-outline-primary.btn-lg.text-white
+                i.fas.fa-arrow-right
+                span.pl-4 Read more
+          .col-lg-6
+            img.img-fluid.d-none.d-lg-block(src="img/mock-poster.png", alt="mock poster image")
+  section#newsletter.bg-dark.text-white.py-5
+    .container
+      .row
+        .col-md-4
+          input.form-control.form-control-lg.mb-resp(type="text", placeholder="Enter Name")
+        .col-md-4
+          input.form-control.form-control-lg.mb-resp(type="email", placeholder="Enter Email")
+        .col-md-4
+          button.btn.btn-primary.btn-lg.btn-block
+                i.fas.fa-arrow-right
+                span.pl-4 Subscribe
+  section#boxes.py-5
+    .container
+      .row
+        .col-md-3
+          .card.text-center.border-primary.mb-resp
+            .card-body
+              h3.text-info Be better!
+              p.text-muted Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, nam!
+        .col-md-3
+          .card.text-center.bg-info.text-white.mb-resp
+            .card-body
+              h3 Be on Top!
+              p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, nam!
+        .col-md-3
+          .card.text-center.border-primary.mb-resp
+            .card-body
+              h3.text-info Be Faster!
+              p.text-muted Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, nam!        
+        .col-md-3
+          .card.text-center.bg-info.text-white.mb-resp
+            .card-body
+              h3 Be Stronger!
+              p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, nam!
+  section#about.bg-light.text-center.py-5
+    .container
+      .row
+        .col
+          .info-header.mb-5
+            h1.text-info.pb-3 Why to choose us?
+            p.lead.pb-3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, minima!
+            #accordion
+              .card
+                .card-header
+                  h5.mb-0
+                    div(href="#collapse1", data-toggle="collapse", data-parent="#accordion")
+                      span.mb-3.d-block Get Inspired
+                      i.fas.fa-arrow-circle-down
+                #collapse1.collapse.show
+                  .card-body Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat cumque illum officia nam fugiat autem dolore sunt ducimus error explicabo dolorem perspiciatis, aperiam laudantium excepturi voluptatum odio pariatur, maxime modi nisi. Earum provident eveniet ipsam, nulla aspernatur libero temporibus non omnis amet reiciendis suscipit repudiandae vero soluta odit laborum odio.
+              .card
+                .card-header
+                  h5.mb-0
+                    div(href="#collapse2", data-toggle="collapse", data-parent="#accordion")
+                      span.mb-3.d-block Gain The Knowledge
+                      i.fas.fa-arrow-circle-down
+                #collapse2.collapse
+                  .card-body Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat cumque illum officia nam fugiat autem dolore sunt ducimus error explicabo dolorem perspiciatis, aperiam laudantium excepturi voluptatum odio pariatur, maxime modi nisi. Earum provident eveniet ipsam, nulla aspernatur libero temporibus non omnis amet reiciendis suscipit repudiandae vero soluta odit laborum odio.
+              .card
+                .card-header
+                  h5.mb-0
+                    div(href="#collapse3", data-toggle="collapse", data-parent="#accordion")
+                      span.mb-3.d-block Open Your Way
+                      i.fas.fa-arrow-circle-down
+                #collapse3.collapse
+                  .card-body Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat cumque illum officia nam fugiat autem dolore sunt ducimus error explicabo dolorem perspiciatis, aperiam laudantium excepturi voluptatum odio pariatur, maxime modi nisi. Earum provident eveniet ipsam, nulla aspernatur libero temporibus non omnis amet reiciendis suscipit repudiandae vero soluta odit laborum odio.
+    hr
+    section#consultants.my-5.text-center
+      .container
+          .row.mb-5
+            .col
+              .info-header.mb-5
+                h1.text-info.pb-3 Meet The Consultants
+                p.lead Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum blanditiis mollitia eius voluptatem optio! Ipsa?
+          .row
+            .col-lg-3.col-md-6
+              .card
+                .card-body
+                  img.img-fluid.rounded-circle.w-50.mb-3(src="img/person1.jpg")
+                  h3 Kate Smith
+                  h5.text-muted Lead consultant
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eum reiciendis quasi nisi ex commodi!
+                  .d-flex.justify-content-center
+                    .p-4
+                      a(href="https://facebook.com")
+                        i.fab.fa-facebook
+                    .p-4
+                      a(href="https://twitter.com")
+                        i.fab.fa-twitter
+                    .p-4
+                      a(href="https://instagram.com")
+                        i.fab.fa-instagram
+            .col-lg-3.col-md-6
+              .card
+                .card-body
+                  img.img-fluid.rounded-circle.w-50.mb-3(src="img/person2.jpg")
+                  h3 Lana Kogan
+                  h5.text-muted Co-writer
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eum reiciendis quasi nisi ex commodi!
+                  .d-flex.justify-content-center
+                    .p-4
+                      a(href="https://facebook.com")
+                        i.fab.fa-facebook
+                    .p-4
+                      a(href="https://twitter.com")
+                        i.fab.fa-twitter
+                    .p-4
+                      a(href="https://instagram.com")
+                        i.fab.fa-instagram
+            .col-lg-3.col-md-6
+              .card
+                .card-body
+                  img.img-fluid.rounded-circle.w-50.mb-3(src="img/person3.jpg")
+                  h3 Mark Smith
+                  h5.text-muted Vice President
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eum reiciendis quasi nisi ex commodi!
+                  .d-flex.justify-content-center
+                    .p-4
+                      a(href="https://facebook.com")
+                        i.fab.fa-facebook
+                    .p-4
+                      a(href="https://twitter.com")
+                        i.fab.fa-twitter
+                    .p-4
+                      a(href="https://instagram.com")
+                        i.fab.fa-instagram
+            .col-lg-3.col-md-6
+              .card
+                .card-body
+                  img.img-fluid.rounded-circle.w-50.mb-3(src="img/person4.jpg")
+                  h3 Kevin Alison
+                  h5.text-muted Consultant
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eum reiciendis quasi nisi ex commodi!
+                  .d-flex.justify-content-center
+                    .p-4
+                      a(href="https://facebook.com")
+                        i.fab.fa-facebook
+                    .p-4
+                      a(href="https://twitter.com")
+                        i.fab.fa-twitter
+                    .p-4
+                      a(href="https://instagram.com")
+                        i.fab.fa-instagram                                                                        
+
+    section#contact.my-5.text-center
+      .container
+          .row.mb-5
+            .col
+              .info-header.mb-5
+                h1.text-info.pb-3 To contact us
+                p.lead Lorem ipsum dolor sit amet (647) *** 4757
